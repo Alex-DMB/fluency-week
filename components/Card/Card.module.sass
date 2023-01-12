@@ -1,0 +1,53 @@
+@use '../../styles/Colors'
+    
+
+
+.background
+    margin-left: -300px
+    position: absolute
+    z-index: -1
+    background: red
+    img
+        width: 700px
+        height: auto
+
+
+.card
+    color: white
+    background-size: cover
+    background-position: center
+    display: flex
+    flex-direction: column
+    padding: 32px 16px
+    width: 200px
+    height: 350px
+    border-radius: 16px
+    transition: 1s
+    border: 1px solid white
+    gap: 32px
+    justify-content: center
+    filter: drop-shadow(1px 24px 40px Colors.$purple-dark)
+    overflow: hidden
+
+    span
+        filter: drop-shadow(0px 0px 2px rgba(black,.75))
+
+
+    &::after
+        z-index: -1
+        content: ''
+        background-image: linear-gradient(to bottom,rgba(black,.3) 50%,rgba(#7394D4,.70))
+        position: absolute
+        margin-left: -50px
+        width: 250px
+        height: 100%
+
+    img
+        transition: 1s
+        align-self: center
+        cursor: pointer
+        &:hover
+            scale: 1.05
+        
+    &:hover
+        scale: 1.05

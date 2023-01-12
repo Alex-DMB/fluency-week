@@ -1,0 +1,45 @@
+@use '../../styles/Colors'
+
+.form
+    width: 416px
+    background: linear-gradient(to right,rgba(Colors.$blue-light,.5),rgba(Colors.$purple-light,.7))
+    display: flex
+    flex-direction: column
+    gap: 32px
+    padding: 48px
+    border: 1px solid white
+    border-radius: 16px
+    backdrop-filter: blur( 4px )
+    -webkit-backdrop-filter: blur( 4px )
+
+    h3
+        font-weight: 700
+        font-size: 20px
+        color: Colors.$black-dark
+        text-align: center
+
+    p
+        color: Colors.$purple-dark
+        text-align: center
+
+
+    >div
+        display: flex
+        flex-direction: column
+        gap: 12px
+
+
+@media screen and ( max-width: 500px )
+    .form
+        width: 100%
+        padding: 24px
+        gap: 16px
+        align-items: center
+
+        h3
+
+            font-size: 17px
+
+
+        p
+            font-size: 14px

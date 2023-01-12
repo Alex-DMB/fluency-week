@@ -1,0 +1,55 @@
+@use '../../../styles/Colors'
+
+.content
+    background: linear-gradient(30deg, Colors.$purple-light 20%,Colors.$blue-light)
+    display: flex
+    justify-content: center
+    margin-bottom: -50px
+    color: Colors.$purple-dark
+
+    >div
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-content: center
+        justify-content: center
+        margin-top: 100px
+        margin-bottom: 100px
+        gap: 32px
+        width: 100%
+        width: 735px
+        align-items: center
+
+
+    .cards
+        display: flex
+        align-items: center
+        gap: 32px
+        margin: 32px
+        justify-content: center
+
+
+@media screen and ( max-width: 500px )
+
+    .content
+        margin-bottom: -120px
+
+        padding: 16px
+            
+        .cards
+            flex-direction: column
+
+
+@media screen and ( min-width: 501px ) and (max-width: 1023px)
+    .content
+        margin-bottom: -100px
+
+        >div
+            width: 100%
+
+        h2,p
+            padding: 0 64px
+
+        .cards
+            flex-wrap: wrap
+            max-width: 499px
